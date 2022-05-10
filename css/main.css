@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    background-color: var(--Pale-blue);
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    margin: 1.25rem;
+}
+.bg-image{
+    background: url(/images/pattern-background-mobile.svg) no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.container{
+    background-color: white;
+    margin-top: 0;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+.main-image img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.container h1{
+    text-align: center;
+    color: var(--Dark-blue);
+    margin-bottom: 1.25rem;
+}
+.container .p-1{
+    text-align: center;
+    color: var(--Desaturated-blue);
+    margin-bottom: 1rem;
+}
+.container .price{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    width: 300px;
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 1rem;
+    margin-bottom: 1.25rem;
+}
+.container .price .music{
+    display: flex;
+    justify-content: space-between;
+
+}
+.container .price .music .annual{
+    margin-left: 15px;
+}
+.container .price .music .annual .p-2{
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+.container .price .music .annual .p-3{
+    color: var(--Desaturated-blue);
+}
+.price a{
+    color: var(--Bright-blue);
+    margin-top: 10px;
+}
+.price a:hover{
+    text-decoration: none;
+    opacity: .7;
+}
+.container .btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 1rem;
+    font-weight: 900;
+    transition: opacity .2s ease-in-out;
+}
+.container .btn:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+.container .p-4{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+    color: var(--Desaturated-blue);
+    width: fit-content;
+}
+.container .p-4:hover{
+    cursor: pointer;
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+@media (min-width: 375px){
+    .container{
+        width: 350px;
+    }
+}
+@media (min-width: 768px){
+    .bg-image{
+        background: url(/images/pattern-background-desktop.svg) no-repeat center/cover;
+        height: 500px;
+    }
+}
+
+
+
